@@ -1,0 +1,53 @@
+$white: #FFFFFF;
+$font_color:#999999;
+
+body {
+    font-family: Helvetica, sans-serif;
+    height: 3300px;
+    max-width: 100vw;
+    background: chocolate; 
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.navbar {
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: $font_color;
+    .navbar-colapse {
+        display: none;
+    }
+    
+    i {
+        width: 3rem;
+        height: 3rem;
+    }
+    .collapsed {        
+        display: flex;        
+        
+    }
+    button {
+        background-color: $white ;
+        border: none;
+        
+    }
+}
+
+.container {
+    background: blue;
+}
+
+@media screen and (min-width:428px) {    
+    .navbar {
+        .navbar-colapse {
+            display: flex;
+        }
+        .collapsed {
+            display: none;
+        }
+    }    
+}

@@ -5,21 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>HTML/CSS Exam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="/assets/logo.svg" alt="Ntflanding logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Launch</a></li>
-                    <li><a class="singup" href="#">Sing Up</a></li>
-                </ul>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/assets/logo.svg" alt="Ntflanding logo">
+                </div>            
+                <button class="collapsed" type="button">                
+                    <i class="fas fa-bars"></i>                    
+                </button>
+                <div class="navbar-colapse">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Launch</a></li>
+                        <li><a class="singup" href="#">Sing Up</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

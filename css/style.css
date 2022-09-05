@@ -1,0 +1,45 @@
+body {
+  font-family: Helvetica, sans-serif;
+  height: 3300px;
+  max-width: 100vw;
+  background: chocolate;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.navbar {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+.navbar .navbar-colapse {
+  display: none;
+}
+.navbar i {
+  width: 3rem;
+  height: 3rem;
+}
+.navbar .collapsed {
+  display: flex;
+}
+.navbar button {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.container {
+  background: blue;
+}
+
+@media screen and (min-width: 428px) {
+  .navbar .navbar-colapse {
+    display: flex;
+  }
+  .navbar .collapsed {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
