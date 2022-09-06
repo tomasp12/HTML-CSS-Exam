@@ -1,6 +1,6 @@
 body {
   font-family: Inter, sans-serif;
-  height: 3300px;
+  max-height: 3300px;
   max-width: 100%;
   background: #EEEEEE;
 }
@@ -41,7 +41,7 @@ body {
   border: none;
 }
 
-.container_1 .picture_1 {
+.container_1 .picture_big {
   position: absolute;
   top: -3rem;
   left: 11rem;
@@ -82,14 +82,14 @@ body {
   border-radius: 5rem;
   padding: 0.3rem;
   background: linear-gradient(45deg, #FF4A76, #CCB371);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#FFFFFF 0 0) content-box, linear-gradient(#FFFFFF 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
 
 .container_2 {
   height: 16rem;
-  background: linear-gradient(90deg, #FF7F77, #CCB371);
+  background: linear-gradient(90deg, #FF4A76, #CCB371);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -175,7 +175,8 @@ body {
   font-weight: 400;
   text-align: left;
 }
-.container_3 .nftCards .nftCard table th:last-child, .container_3 .nftCards .nftCard table td:last-child {
+.container_3 .nftCards .nftCard table th:last-child,
+.container_3 .nftCards .nftCard table td:last-child {
   text-align: right;
 }
 .container_3 .nftCards .nftCard table tfoot {
@@ -210,7 +211,7 @@ body {
   width: 18rem;
   margin: 0.5rem 0 3rem 0;
 }
-.container_4 .picture_1 {
+.container_4 .picture_big {
   position: absolute;
   top: 9.3rem;
   left: 17rem;
@@ -249,7 +250,7 @@ body {
   border-radius: 5rem;
   padding: 0.3rem;
   background: linear-gradient(45deg, #FF4A76, #CCB371);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#FFFFFF 0 0) content-box, linear-gradient(#FFFFFF 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -312,6 +313,7 @@ body {
     padding: 3rem 3rem 0rem 3rem;
     max-width: 1280px;
     flex: 2 1 auto;
+    overflow: auto;
   }
   .navbar .navbar-colapse {
     display: flex;
@@ -339,7 +341,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.1rem;
   }
-  .container_1 .picture_1 {
+  .container_1 .picture_big {
     position: absolute;
     top: 0;
     left: 33rem;
@@ -351,6 +353,7 @@ body {
     font-size: 5.8rem;
     width: 40rem;
     margin: 2rem 0;
+    word-spacing: -0.8rem;
     letter-spacing: -0.3rem;
   }
   .container_1 p {
@@ -388,12 +391,14 @@ body {
   }
   .container_4 h2 {
     font-family: Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 900;
     width: 45rem;
     margin: 1rem 0;
+    word-spacing: -0.8rem;
+    letter-spacing: -0.1rem;
   }
-  .container_4 .picture_1 {
+  .container_4 .picture_big {
     position: absolute;
     top: 6.7rem;
     left: 55rem;
