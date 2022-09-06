@@ -13,7 +13,7 @@ body {
   background: #FFFFFF;
 }
 
-.container_h {
+.container {
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -38,19 +38,13 @@ body {
   border: none;
 }
 
-.container_1 {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
 .container_1 .picture_1 {
   position: absolute;
   top: -3rem;
   left: 11rem;
   height: 30rem;
 }
-.container_1 .launcingSoon p {
+.container_1 .launcingSoon {
   text-transform: uppercase;
   color: #FF3998;
   font-weight: 700;
@@ -91,10 +85,6 @@ body {
 }
 
 .container_2 {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   height: 16rem;
   background: linear-gradient(90deg, #FF7F77, #CCB371);
   background-repeat: no-repeat;
@@ -137,12 +127,6 @@ body {
   display: none;
 }
 
-.container_3 {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
 .container_3 h3 {
   font-size: 2.4rem;
   margin-bottom: 0;
@@ -200,13 +184,7 @@ body {
   border: 0.05rem inset rgba(238, 238, 238, 0.5);
 }
 
-.container_4 {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.container_4 .launcingSoon p {
+.container_4 .launcingSoon {
   text-transform: uppercase;
   color: #FF3998;
   font-weight: 700;
@@ -264,10 +242,6 @@ body {
 }
 
 .container_f {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   font-size: 1.1rem;
   color: #777777;
   padding-top: 5rem;
@@ -318,10 +292,122 @@ body {
 }
 
 @media screen and (min-width: 428px) {
+  .mainContainer {
+    padding: 3rem 3rem 0 3rem;
+    width: 1280px;
+  }
   .navbar .navbar-colapse {
     display: flex;
+    flex-direction: row;
+  }
+  .navbar .navbar-colapse a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #777777;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .navbar .navbar-colapse .singup {
+    color: #FF3998;
   }
   .navbar .collapsed {
     display: none;
+  }
+  .container_1 {
+    padding: 10rem 0;
+  }
+  .container_1 .launcingSoon {
+    text-transform: uppercase;
+    color: #FF3998;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  .container_1 .picture_1 {
+    position: absolute;
+    top: 0;
+    left: 33rem;
+    height: 55rem;
+  }
+  .container_1 h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    width: 40rem;
+    margin: 2rem 0;
+  }
+  .container_1 p {
+    color: #777777;
+    width: 35rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+  .container_2 {
+    background: url(/assets/background.svg);
+    padding-left: 4rem;
+  }
+  .companies {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+  }
+  .companies .compa_4 {
+    display: flex;
+  }
+  .companies img {
+    height: 10rem;
+  }
+  .container_4 {
+    padding: 8rem 0;
+  }
+  .container_4 h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    width: 45rem;
+    margin: 1rem 0;
+  }
+  .container_4 .picture_1 {
+    position: absolute;
+    top: 6.7rem;
+    left: 55rem;
+    height: 30rem;
+  }
+  .container_4 p {
+    width: 30rem;
+  }
+  .container_4 .split {
+    display: none;
+  }
+  .container_f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+  .container_f .logo {
+    padding-top: 2rem;
+  }
+  .container_f .footerNav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+  }
+  .container_f .footerNav div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #777777;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .copyright p:last-child {
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */
