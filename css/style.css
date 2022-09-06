@@ -1,38 +1,320 @@
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Inter, sans-serif;
   height: 3300px;
   max-width: 100vw;
-  background: chocolate;
+  background: #EEEEEE;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 6rem;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  background: #FFFFFF;
+}
+
+.container_h {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .navbar {
-  padding: 2rem 1.5rem;
   display: flex;
   justify-content: space-between;
-  color: #999999;
+  width: 100%;
+  color: #777777;
 }
 .navbar .navbar-colapse {
   display: none;
 }
 .navbar i {
-  width: 3rem;
-  height: 3rem;
-}
-.navbar .collapsed {
-  display: flex;
+  font-size: 2rem;
+  color: #777777;
 }
 .navbar button {
   background-color: #FFFFFF;
   border: none;
 }
 
-.container {
-  background: blue;
+.container_1 {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container_1 .picture_1 {
+  position: absolute;
+  top: -3rem;
+  left: 11rem;
+  height: 30rem;
+}
+.container_1 .launcingSoon p {
+  text-transform: uppercase;
+  color: #FF3998;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.container_1 h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  width: 18rem;
+}
+.container_1 p {
+  color: #777777;
+  width: 16rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.container_1 button {
+  width: 12rem;
+  height: 5rem;
+  font-weight: 700;
+  border: 3px solid transparent;
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  background: none;
+}
+.container_1 button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  background: linear-gradient(45deg, #FF4A76, #CCB371);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.container_2 {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 16rem;
+  background: linear-gradient(90deg, #FF7F77, #CCB371);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end;
+}
+.container_2 h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.container_2 p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.companies {
+  padding-top: 2rem;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+}
+.companies img {
+  width: 10rem;
+  height: 4rem;
+  justify-self: center;
+}
+.companies .compa_1 {
+  grid-area: 1/1;
+}
+.companies .compa_2 {
+  grid-area: 1/2;
+}
+.companies .compa_3 {
+  grid-area: 2/1;
+}
+.companies .compa_5 {
+  grid-area: 2/2;
+}
+.companies .compa_4 {
+  display: none;
+}
+
+.container_3 {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container_3 h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.container_3 p {
+  font-size: 1.2rem;
+  color: #777777;
+  line-height: 2rem;
+}
+.container_3 p a {
+  color: #777777;
+  font-weight: 600;
+}
+.container_3 .nftCards {
+  display: flex;
+  margin: 1.5rem 0 3rem 0;
+}
+.container_3 .nftCards .nftCard {
+  margin-right: 3rem;
+  background-color: #EEEEEE;
+  border-radius: 1rem;
+}
+.container_3 .nftCards .nftCard table {
+  width: 100%;
+  padding: 1rem;
+}
+.container_3 .nftCards .nftCard table th:first-child {
+  color: #FF8139;
+}
+.container_3 .nftCards .nftCard table th {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+}
+.container_3 .nftCards .nftCard table th:last-child, .container_3 .nftCards .nftCard table td:last-child {
+  text-align: right;
+}
+.container_3 .nftCards .nftCard table tfoot {
+  color: #777777;
+}
+.container_3 .nftCards .nftCard table td {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 0 0.3rem 0;
+}
+
+.split {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border: 0.05rem inset rgba(238, 238, 238, 0.5);
+}
+
+.container_4 {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container_4 .launcingSoon p {
+  text-transform: uppercase;
+  color: #FF3998;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.container_4 h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  width: 18rem;
+  margin: 0;
+}
+.container_4 .picture_1 {
+  position: absolute;
+  top: 9.3rem;
+  left: 17rem;
+  height: 30rem;
+}
+.container_4 p {
+  color: #777777;
+  width: 16rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.container_4 .split {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border: 0.05rem inset rgba(238, 238, 238, 0.5);
+}
+.container_4 button {
+  width: 12rem;
+  height: 5rem;
+  font-weight: 700;
+  border: 3px solid transparent;
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  background: none;
+  margin-bottom: 1.5rem;
+}
+.container_4 button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  background: linear-gradient(45deg, #FF4A76, #CCB371);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.container_f {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.1rem;
+  color: #777777;
+  padding-top: 5rem;
+}
+.container_f i {
+  padding: 0 0.2rem;
+}
+.container_f h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+}
+.container_f .footerNav {
+  padding-top: 3rem;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+}
+.container_f .footerNav .nav_1 {
+  grid-area: 1/1;
+}
+.container_f .footerNav .nav_2 {
+  grid-area: 1/2;
+}
+.container_f .footerNav .nav_3 {
+  grid-area: 2/1;
+}
+.container_f .footerNav .nav_5 {
+  grid-area: 2/2;
+}
+.container_f .footerNav div {
+  display: flex;
+  flex-direction: column;
+}
+.container_f .footerNav div a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #777777;
+}
+
+.copyright {
+  color: #777777;
+  font-size: 1.2rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+}
+.copyright p:last-child {
+  display: none;
 }
 
 @media screen and (min-width: 428px) {
